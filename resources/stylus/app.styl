@@ -1,5 +1,33 @@
+@import "~normalize.css"
+@import url('https://fonts.googleapis.com/css?family=Share+Tech')
+@import url('https://fonts.googleapis.com/css?family=Work+Sans')
+
 @tailwind preflight;
 
 // Import hier custom stylus code
+primary-color = rgba(156,232,145,1)
+secondary-color = rgba(237,184,120,1)
+
+accent-color-one = rgba(139,199,221,1)
+accent-color-two = rgba(228,133,117,1)
+
+.accent-one
+  background-color accent-color-one
+
+.accent-two
+  background-color accent-color-two
+
+.primary-color
+  background-color primary-color
+
+.secondary-color
+  background-color secondary-color
+
+body
+  font-family Work Sans, sans-serif
+
+h1,h2,h3,h4,h5,h6
+  font-family Share Tech, sans-serif
+
 
 @tailwind utilities;
