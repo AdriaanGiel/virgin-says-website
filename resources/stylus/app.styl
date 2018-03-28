@@ -11,6 +11,7 @@ secondary-color = rgba(237,184,120,1)
 
 accent-color-one = rgba(139,199,221,1)
 accent-color-two = rgba(228,133,117,1)
+default-color-one = rgba(251,247,239,1)
 
 .accent-one
   background-color accent-color-one
@@ -30,5 +31,55 @@ body
 h1,h2,h3,h4,h5,h6
   font-family Share Tech, sans-serif
 
+#head,#qr-text
+    z-index:1000
+    vertical-align:middle
+    text-align:center
+    font-size:40px
+    display:flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    height:150px
+    color:accent-color-one
+
+
+
+.md-layout-item {
+    height: 300px;
+    margin-top:20px
+
+    &:after {
+      width: 100%;
+      height: 100%;
+      display: block;
+      content: " ";
+    }
+
+    &.md-layout {
+      &:after {
+        transform: translateY(-100%);
+      }
+
+      .md-layout-item:after {
+        height: 89%;
+        margin-top: 16px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+
+#logo
+    display:block
+    width:7%
+    height:auto
+    margin:auto
+
+#qr
+    display:block
+    width:70%
+    height:auto
+    margin: auto
 
 @tailwind utilities;
