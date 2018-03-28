@@ -7,10 +7,19 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body class="serif">
-<div id="app">
-    <navigation></navigation>
 
-    <router-view></router-view>
+<div id="app">
+    <header>
+        <navigation></navigation>
+    </header>
+
+    <main>
+        <router-view></router-view>
+    </main>
+
+    <footer>
+        <v-footer></v-footer>
+    </footer>
 </div>
 
 <script src="js/main.js"></script>

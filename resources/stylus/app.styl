@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech')
 @import url('https://fonts.googleapis.com/css?family=Work+Sans')
 
-@tailwind preflight;
+//@tailwind preflight;
 
 // Import hier custom stylus code
 primary-color = rgba(156,232,145,1)
@@ -26,9 +26,31 @@ accent-color-two = rgba(228,133,117,1)
 
 body
   font-family Work Sans, sans-serif
+  background-color accent-color-one
 
 h1,h2,h3,h4,h5,h6
   font-family Share Tech, sans-serif
 
+.flex
+  display flex
 
-@tailwind utilities;
+.flex-center
+  justify-content center
+  align-items center
+
+.horizontal-flex
+  justify-content center
+
+.flex-row
+  flex-direction row
+
+.flex-column
+  flex-direction column
+
+@import "promo.styl"
+@import "highscore.styl"
+@import "download.styl"
+@import "events.styl"
+@import "contact.styl"
+
+//@tailwind utilities;
