@@ -3427,6 +3427,10 @@ html-minifier@^3.0.1:
     relateurl "0.2.x"
     uglify-js "3.3.x"
 
+html5-device-mockups@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/html5-device-mockups/-/html5-device-mockups-3.2.1.tgz#97e39de69e9fa86760116653d8daf5fe43be77d5"
+
 http-cache-semantics@3.8.1:
   version "3.8.1"
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-3.8.1.tgz#39b0e16add9b605bf0a9ef3d9daaf4843b4cacd2"

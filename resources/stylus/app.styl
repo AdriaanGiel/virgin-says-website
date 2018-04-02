@@ -1,5 +1,6 @@
 @import "~normalize.css"
-@import "~vue-material/dist/vue-material.min.css"
+@import "~html5-device-mockups"
+@import "~vue-material/dist/vue-material.css"
 @import url('https://fonts.googleapis.com/css?family=Share+Tech')
 @import url('https://fonts.googleapis.com/css?family=Work+Sans')
 
@@ -11,6 +12,9 @@ secondary-color = rgba(237,184,120,1)
 
 accent-color-one = rgba(139,199,221,1)
 accent-color-two = rgba(228,133,117,1)
+
+smartPhoneWidth = 741px;
+$smartPhone = "only screen and (max-width: "+ smartPhoneWidth +")"
 
 .accent-one
   background-color accent-color-one
@@ -26,7 +30,7 @@ accent-color-two = rgba(228,133,117,1)
 
 body
   font-family Work Sans, sans-serif
-  background-color accent-color-one
+  background-color #f1f4f6
 
 h1,h2,h3,h4,h5,h6
   font-family Share Tech, sans-serif
@@ -46,6 +50,27 @@ h1,h2,h3,h4,h5,h6
 
 .flex-column
   flex-direction column
+
+.v-footer
+  height 40vh
+  background-color grey
+  position relative
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.custom-card
+  background-color white
+  text-align center
+
+
+//@media smartPhone
+//  body
+//    font-size 30px !important
 
 @import "promo.styl"
 @import "highscore.styl"

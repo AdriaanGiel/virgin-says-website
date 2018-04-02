@@ -1,20 +1,22 @@
 .highscore
   height 120vh
-  background-color red
+  background-color accent-color-one
   transform-origin left bottom
   //transform skewY(3deg)
   z-index -2
   position relative
-  top -100px
+  top -200px
+
 
 
 .highscore-box
   position relative
-  height 75%
-  width  75%
+  height 50%
+  width 500px
   background-color white
   transform skewY(0deg)
-  h2
+  padding 0 1em
+  h3
     width 100%
     text-align center
   .highscore-item-content
@@ -23,3 +25,7 @@
     highscore-items
       width 75%
       height  75%
+
+@media $smartPhone
+  .highscore-box
+    width 95%

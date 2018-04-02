@@ -21,6 +21,8 @@ mix.js('resources/js/main.js', 'public/js')
             tailwindcss('./tailwind.js')
         ]
     })
+    .copy('resources/device-mockups','public/device-mockups')
+    .copy('resources/images','public/images')
     .version()
     .setPublicPath('public')
     .options({

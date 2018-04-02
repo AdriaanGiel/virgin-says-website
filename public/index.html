@@ -5,21 +5,25 @@
     <title>Title</title>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
     <link rel="stylesheet" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="serif">
 
 <div id="app">
-    <header>
-        <navigation></navigation>
-    </header>
+    <v-app>
+        <header>
+            <navigation></navigation>
+        </header>
 
-    <main>
-        <router-view></router-view>
-    </main>
+        <main>
+            <router-view></router-view>
+        </main>
 
-    <footer>
-        <v-footer></v-footer>
-    </footer>
+        <footer>
+            <v-footer></v-footer>
+        </footer>
+    </v-app>
+
 </div>
 
 <script src="js/main.js"></script>
