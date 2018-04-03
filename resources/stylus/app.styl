@@ -9,9 +9,15 @@
 primary-color = rgba(156,232,145,1)
 secondary-color = rgba(237,184,120,1)
 
+color-one = rgb(242,203,48)
+color-two = rgb(69,121,251)
+color-three = rgb(220,61,51)
+color-four = rgb(136,216,107)
+
 accent-color-one = rgba(139,199,221,1)
 accent-color-two = rgba(228,133,117,1)
 default-color-one = rgba(251,247,239,1)
+
 
 .accent-one
   background-color accent-color-one
@@ -28,20 +34,37 @@ default-color-one = rgba(251,247,239,1)
 body
   font-family Work Sans, sans-serif
 
+
 h1,h2,h3,h4,h5,h6
   font-family Share Tech, sans-serif
 
-#head,#qr-text
+#head,.header,#spel-header
     z-index:1000
     vertical-align:middle
     text-align:center
-    font-size:40px
+    font-size:25px
     display:flex
     align-items: center
     flex-direction: column
     justify-content: center
-    height:150px
+    height: 10%
     color:accent-color-one
+
+#head
+    margin-top:30px
+    margin-bottom:40px
+
+.text
+        vertical-align:middle
+        text-align:center
+        font-size:24px
+        display:flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        margin-top:auto
+        margin-bottom:auto
+        padding: 30px 0
 
 
 
@@ -54,6 +77,7 @@ h1,h2,h3,h4,h5,h6
       height: 100%;
       display: block;
       content: " ";
+
     }
 
     &.md-layout {
@@ -66,6 +90,8 @@ h1,h2,h3,h4,h5,h6
         margin-top: 16px;
         position: relative;
         z-index: 1;
+
+
       }
     }
   }
@@ -78,8 +104,19 @@ h1,h2,h3,h4,h5,h6
 
 #qr
     display:block
-    width:70%
+    width:20%
     height:auto
     margin: auto
+
+.parallax
+    background-image: url("/public/images/2.png");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
 
 @tailwind utilities;
