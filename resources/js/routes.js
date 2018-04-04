@@ -6,6 +6,11 @@ let routes = [
     {
         path:'/home',
         component: require('./pages/promo')
+    },
+
+    {
+        path:'/uitleg',
+        component: require('./pages/explanation')
     }
 ];
 
