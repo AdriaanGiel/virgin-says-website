@@ -1,19 +1,78 @@
 .download
-  height 100vh
+  transform-origin right top
+  transform: skewX(-1deg) skewY(-5deg);
+  //background-color blue
+  overflow hidden
+  width 100%
   background-color #f1f4f6
-  position relative
-  top -100px
-  div
-    height 90%
-    width 100%
-    //background-color red
+  .full-height
+    height 100vh
+  .big-title
+    transform skewX(1deg) skewY(5deg)
+  @media $smartPhonePortrait
+    .big-title
+      font-size 3em
+//background-color red
+@media $smartPhonePortrait
+  .app-buttons
+    justify-content flex-start
 
-//.apple-store-button
-//  width 200px
-//  height 100%
-//.google-play-button
-//  width 200px
-//  height 100%
+  .phone-box
+    position relative
+    top -7em
+
+.app-buttons
+  height 100%
+  transform skewX(1deg) skewY(5deg)
+
+@media $smartPhoneLandscape
+  .phone-box
+    position relative
+    top -2em
+
+.android
+  max-width 350px
+  transform skewX(1deg) skewY(5deg)
+  position absolute
+  z-index 2
+  display inline
+  .device-wrapper
+    width 340px
+  @media $smartPhonePortrait
+    max-width 200px
+    right 10em
+    .device-wrapper
+      width 205px
+  @media $smartPhoneLandscape
+    max-width 200px
+    left 5em
+    .device-wrapper
+      width 145px
+
+.iphone
+  transform skewX(1deg) skewY(5deg)
+  max-width 350px
+  position absolute
+  display inline
+  left 8em
+
+  z-index 1
+  .device-wrapper
+    width 320px
+  @media $smartPhonePortrait
+    max-width 200px
+    left 10em
+    .device-wrapper
+      width 200px
+  @media $smartPhoneLandscape
+    max-width 200px
+    //left 5em
+    .device-wrapper
+      width 140px
 
 .device-wrapper
   max-width 340px
+
+@media $smartPhoneLandscape
+  .mobile-landscape-flex-column
+    flex-direction row

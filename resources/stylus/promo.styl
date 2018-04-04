@@ -1,9 +1,27 @@
 .promo-head
-  background-image url(../images/rest.jpg)
+  background-image url(../images/desktop-normal.jpg)
   background-repeat no-repeat
+  background-size cover
+  //background-position top center
   height 92vh
   width 100%
   transform-origin right bottom
   transform skewY(3deg)
   border-bottom 3em solid primary-color
+  @media $smartPhoneLandscape
+    background-size cover
+  @media $smartPhonePortrait
+    height 80vh
+    background-image url(../images/standbeeld.jpg)
+    //background-position center
+    background-size: 100% 100%;
 
+
+.promo-card
+  width 500px
+  height 300px
+  transform skewY(-3deg)
+  opacity .95
+  @media  $smartPhoneLandscape
+    width 350px
+    height 250px

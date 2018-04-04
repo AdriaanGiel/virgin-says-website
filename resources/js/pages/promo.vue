@@ -4,7 +4,8 @@
         <highscore></highscore>
         <download></download>
         <events></events>
-        <contact></contact>
+        <!--<contact></contact>-->
+        <location></location>
     </div>
 </template>
 
@@ -14,6 +15,7 @@
     import download from '../components/download';
     import events from '../components/events';
     import contact from '../components/contact';
+    import location from '../components/location';
 
     export default {
         name: "promo",
@@ -22,7 +24,8 @@
             'highscore': highscore,
             'download': download,
             'events': events,
-            'contact': contact
+            'contact': contact,
+            'location': location
         }
     }
 </script>

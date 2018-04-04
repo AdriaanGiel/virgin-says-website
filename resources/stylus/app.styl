@@ -7,14 +7,16 @@
 //@tailwind preflight;
 
 // Import hier custom stylus code
-primary-color = rgba(156,232,145,1)
-secondary-color = rgba(237,184,120,1)
+primary-color = rgba(156, 232, 145, 1)
+secondary-color = rgba(237, 184, 120, 1)
 
-accent-color-one = rgba(139,199,221,1)
-accent-color-two = rgba(228,133,117,1)
+accent-color-one = rgba(139, 199, 221, 1)
+accent-color-two = rgba(228, 133, 117, 1)
 
 smartPhoneWidth = 741px;
-$smartPhone = "only screen and (max-width: "+ smartPhoneWidth +")"
+$smartPhone = "only screen and (max-width: " + smartPhoneWidth + ")"
+$smartPhonePortrait = "only screen and (max-width: " + smartPhoneWidth + ") and (orientation : portrait)"
+$smartPhoneLandscape = "only screen and (max-width: " + smartPhoneWidth + ") and (orientation : landscape)"
 
 .accent-one
   background-color accent-color-one
@@ -32,8 +34,11 @@ body
   font-family Work Sans, sans-serif
   background-color #f1f4f6
 
-h1,h2,h3,h4,h5,h6
+h1, h2, h3, h4, h5, h6
   font-family Share Tech, sans-serif
+
+.section
+  min-height 100vh
 
 .flex
   display flex
@@ -41,6 +46,16 @@ h1,h2,h3,h4,h5,h6
 .flex-center
   justify-content center
   align-items center
+
+.flex-right
+  justify-content flex-end
+
+.flex-right-center
+  justify-content flex-end
+  align-items center
+
+.flex-bottom
+  align-items flex-end
 
 .horizontal-flex
   justify-content center
@@ -52,21 +67,55 @@ h1,h2,h3,h4,h5,h6
   flex-direction column
 
 .v-footer
-  height 40vh
+  height 25vh
+  background-color darkgray
+
+.copyright
+  height 3em
   background-color grey
+  width 100%
+
+.full-height
+  height 100%
+
+.relative
   position relative
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
   opacity: 0;
 }
+
+.text-center
+  text-align center
+
+.big-title
+  font-size 4em
 
 .custom-card
   background-color white
   text-align center
 
+.desktop.no-landscape
+  visibility visible
+
+.mobile
+  visibility hidden
+@media $smartPhoneLandscape
+  .no-landscape
+    visibility hidden
+@media $smartPhone
+  .mobile-flex-column
+    flex-direction column
+
+  .desktop
+    visibility hidden
+  .mobile
+    visibility visible
 
 //@media smartPhone
 //  body

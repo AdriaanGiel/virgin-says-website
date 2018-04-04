@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div  id="contact" class=" flex flex-center">
+        <div id="contact" class=" flex flex-center">
             <md-button @click="showForm" class="md-raised md-accent">Accent</md-button>
         </div>
 
@@ -17,13 +17,16 @@
                                 <label>Naam</label>
                                 <md-input v-model="initial"></md-input>
                             </md-field>
+                            <!--<hr>-->
                             <md-field>
                                 <label>Email</label>
                                 <md-input v-model="initial"></md-input>
                             </md-field>
+                            <!--<hr>-->
                             <md-field>
                                 <md-textarea v-model="textarea"></md-textarea>
                             </md-field>
+                            <!--<hr>-->
                         </form>
 
                     </md-card-content>

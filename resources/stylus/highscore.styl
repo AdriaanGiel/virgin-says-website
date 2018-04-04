@@ -1,21 +1,30 @@
 .highscore
-  height 120vh
   background-color accent-color-one
-  transform-origin left bottom
-  //transform skewY(3deg)
   z-index -2
-  position relative
-  top -200px
+  transform-origin right top
+  transform skewY(3deg)
+  @media $smartPhone
+   height 100%
+   top -25px
+
+@media $smartPhonePortrait
+  .highscore.section
+    height 120vh
 
 
+.highscore-card
+  transform-origin right top
+  transform skewY(-3deg)
 
 .highscore-box
   position relative
-  height 50%
+  height 60%
   width 500px
   background-color white
   transform skewY(0deg)
   padding 0 1em
+  @media $smartPhoneLandscape
+    //height 80%
   h3
     width 100%
     text-align center
@@ -27,5 +36,5 @@
       height  75%
 
 @media $smartPhone
-  .highscore-box
+  .highscore-card
     width 95%
