@@ -7,11 +7,11 @@
 //@tailwind preflight;
 
 // Import hier custom stylus code
-primary-color = rgba(156,232,145,1)
-secondary-color = rgba(237,184,120,1)
+primary-color = rgba(156, 232, 145, 1)
+secondary-color = rgba(237, 184, 120, 1)
 
-accent-color-one = rgba(139,199,221,1)
-accent-color-two = rgba(228,133,117,1)
+accent-color-one = rgba(139, 199, 221, 1)
+accent-color-two = rgba(228, 133, 117, 1)
 
 smartPhoneWidth = 741px;
 $smartPhone = "only screen and (max-width: " + smartPhoneWidth + ")"
@@ -92,39 +92,39 @@ h1, h2, h3, h4, h5, h6
 
 .text-center
   text-align center
-#head,.header,#spel-header
-    z-index:1000
-    vertical-align:middle
-    text-align:center
-    font-size:25px
-    display:flex
-    align-items: center
-    flex-direction: column
-    justify-content: center
-    height: 10%
-    color:accent-color-one
+
+#head, .header, #spel-header
+  z-index: 1000
+  vertical-align: middle
+  text-align: center
+  font-size: 25px
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  height: 10%
+  color: accent-color-one
 
 #head
-    margin-top:30px
-    margin-bottom:40px
+  margin-top: 30px
+  margin-bottom: 40px
 
 .text
-        vertical-align:middle
-        text-align:center
-        font-size:24px
-        display:flex
-        align-items: center
-        flex-direction: column
-        justify-content: center
-        margin-top:auto
-        margin-bottom:auto
-        padding: 30px 0
+  vertical-align: middle
+  text-align: center
+  font-size: 24px
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: center
+  margin-top: auto
+  margin-bottom: auto
+  padding: 30px 0
 
-
-
-.md-layout-item {
+#explanation{
+  .md-layout-item {
     height: 300px;
-    margin-top:20px
+    margin-top: 20px
 
     &:after {
       width: 100%;
@@ -145,33 +145,31 @@ h1, h2, h3, h4, h5, h6
         position: relative;
         z-index: 1;
 
-
       }
     }
   }
+}
+
 
 #logo
-    display:block
-    width:7%
-    height:auto
-    margin:auto
+  display: block
+  width: 7%
+  height: auto
+  margin: auto
 
 #qr
-    display:block
-    width:20%
-    height:auto
-    margin: auto
+  display: block
+  width: 20%
+  height: auto
+  margin: auto
 
 .parallax
-    background-image: url("../images/test.jpg");
-    height: 10%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20%;
-
-
-
+  background-image: url("../images/test.jpg");
+  height: 10%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20%;
 
 .big-title
   font-size 4em
@@ -185,15 +183,18 @@ h1, h2, h3, h4, h5, h6
 
 .mobile
   visibility hidden
+
 @media $smartPhoneLandscape
   .no-landscape
     visibility hidden
+
 @media $smartPhone
   .mobile-flex-column
     flex-direction column
 
   .desktop
     visibility hidden
+
   .mobile
     visibility visible
 

@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div id="explanation">
         <!--jumbo-->
-        <div id="jumbo" class="md-layout-item md-layout md-gutter md-elevation-8">
+        <div id="jumbo" class=" custom-card md-layout-item md-layout md-gutter md-elevation-8">
             <div class="md-layout-item">
                 <p id="head">Virgin Says</p>
                 <img id="logo" src="images/test.jpg" alt="">
@@ -11,7 +11,7 @@
 
         <div class="parallax">
         <!--content-->
-        <div id="box_1" class="md-layout-item md-layout md-gutter md-elevation-7">
+        <div id="box_1" class="md-layout-item custom-card md-layout md-gutter md-elevation-7">
             <div id="box_1_inside" class="md-layout-item">
                 <p class="header">Scan de QR-code.</p>
                 <!--<div class="md-small-hide">-->
@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <div id="second" class="md-layout-item md-layout md-gutter md-elevation-6">
+        <div id="second" class="md-layout-item custom-card md-layout md-gutter md-elevation-6">
             <div class="md-layout-item">
                 <p class="header">Doel</p>
 
@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <div id="third" class="md-layout-item md-layout md-gutter md-elevation-5">
+        <div id="third" class="md-layout-item md-layout custom-card md-gutter md-elevation-5">
             <div class="md-layout-item">
                 <!--header-->
                 <p class="header">Voordat je begin</p>
@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <div id="fourth" class="md-layout-item md-layout md-gutter md-elevation-4">
+        <div id="fourth" class="md-layout-item md-layout custom-card md-gutter md-elevation-4">
             <div class="md-layout-item">
                 <!--header-->
                 <p class="header">Spelers</p>
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div id="fifth" class="md-layout-item md-layout md-gutter md-elevation-2">
+        <div id="fifth" class="md-layout-item md-layout custom-card md-gutter md-elevation-2">
             <div class="md-layout-item">
                 <!--header-->
                 <p class="header">Het spel spelen</p>
@@ -75,7 +75,7 @@
             </div>
         </div>
 
-        <div id="sixth" class="md-layout-item md-layout md-gutter md-elevation-3">
+        <div id="sixth" class="md-layout-item md-layout custom-card md-gutter md-elevation-3">
             <div class="md-layout-item">
                 <!--header-->
                 <p class="header">3 kansen anders game over</p>
@@ -88,7 +88,7 @@
             </div>
         </div>
 
-        <div id="seventh" class="md-layout-item md-layout md-gutter md-elevation-1">
+        <div id="seventh" class="md-layout-item md-layout custom-card md-gutter md-elevation-1">
             <div class="md-layout-item">
                 <!--header-->
                 <p class="header">Moeilijkheidsgraad</p>
@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <div id="eight" class="md-layout-item md-layout md-gutter">
+        <div id="eight" class="md-layout-item md-layout custom-card md-gutter">
             <div class="md-layout-item">
                 <!--header-->
                 <p class="header">Topspelers</p>
