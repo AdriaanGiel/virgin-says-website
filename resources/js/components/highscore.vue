@@ -36,6 +36,36 @@
         name: "highscore",
         components:{
             'highscore-items': highscoreItems
+        },
+        data(){
+            return {
+                highscores: {}
+            }
+        },
+        mounted(){
+            this.getHighscores();
+        },
+        methods:{
+            getHighscores(){
+                Reqwest({
+                    url: 'https://www.adriaangiel.me/api/highscores',
+                    type: 'json'
+                    , contentType: 'application/json'
+                    , crossOrigin: true
+                    , withCredentials: true
+                    , success: this.fillHighscores
+                    , error: this.showErrorMessage
+                })
+            },
+            foo(e){
+                console.log(e);
+            },
+            fillHighscores(data){
+                console.log(data);
+            },
+            showErrorMessage(error){
+                console.log(error);
+            }
         }
     }
 </script>
