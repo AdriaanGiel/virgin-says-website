@@ -38,10 +38,8 @@
             <div class="md-layout-item">
                 <!--header-->
                 <p class="header">Voordat je begin</p>
-
                 <!--image-->
                 <img src="" alt="">
-
                 <!--text-->
                 <p class="text">
                     Als het spel gaat beginnen krijgt u de mogelijkheid om aan te geven met hoeveel personen u gaat spelen.
@@ -116,6 +114,7 @@
             </div>
         </div>
         <!--end content-->
+
         </div>
 
     </div>
